@@ -10,6 +10,8 @@ const projects = [
     tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
     color: '#00d4ff',
     emoji: '🛍️',
+    github: 'https://github.com/gopinathmurugan23/shopsphere',
+    live: 'https://shopsphere-shoping.netlify.app/',
   },
   {
     title: 'TaskFlow',
@@ -17,6 +19,8 @@ const projects = [
     tags: ['Next.js', 'PostgreSQL', 'Prisma', 'TypeScript'],
     color: '#7c3aed',
     emoji: '📋',
+    github: 'https://github.com/gopinathmurugan23/taskflow',
+    live: 'https://taskflow.vercel.app/',
   },
   {
     title: 'DevConnect',
@@ -24,6 +28,8 @@ const projects = [
     tags: ['React', 'Express', 'Socket.io', 'Redis'],
     color: '#06b6d4',
     emoji: '🔗',
+    github: 'https://github.com/gopinathmurugan23/devconnect',
+    live: 'https://devconnect.vercel.app/',
   },
   {
     title: 'AIPulse',
@@ -31,6 +37,8 @@ const projects = [
     tags: ['Python', 'FastAPI', 'React', 'OpenAI'],
     color: '#8b5cf6',
     emoji: '🤖',
+    github: 'https://github.com/gopinathmurugan23/aipulse',
+    live: 'https://aipulse.vercel.app/',
   },
   {
     title: 'WeatherNow',
@@ -38,6 +46,8 @@ const projects = [
     tags: ['React', 'REST API', 'CSS Animations'],
     color: '#0ea5e9',
     emoji: '🌤️',
+    github: 'https://github.com/gopinathmurugan23/weathernow',
+    live: 'https://weathernow.vercel.app/',
   },
   {
     title: 'BlogCraft',
@@ -45,6 +55,9 @@ const projects = [
     tags: ['Next.js', 'MDX', 'Tailwind', 'Vercel'],
     color: '#ec4899',
     emoji: '✍️',
+    github: 'https://github.com/gopinathmurugan23/blogcraft',
+    live: 'https://blogcraft.vercel.app/',
+
   },
 ];
 
@@ -96,10 +109,10 @@ export default function Projects() {
                 </div>
               </div>
               <div className="project-links">
-                <a href="#" aria-label="GitHub" className="icon-link">
+                <a href={p.github} aria-label="GitHub" className="icon-link">
                   <FiGithub />
                 </a>
-                <a href="#" aria-label="Live" className="icon-link">
+                <a href={p.live} aria-label="Live" className="icon-link">
                   <FiExternalLink />
                 </a>
               </div>
