@@ -109,10 +109,10 @@ export default function Projects() {
                 </div>
               </div>
               <div className="project-links">
-                <a href={p.github} aria-label="GitHub" className="icon-link">
+                <a href={p.github} aria-label="GitHub" className="icon-link" target="_blank" rel="noopener noreferrer">
                   <FiGithub />
                 </a>
-                <a href={p.live} aria-label="Live" className="icon-link">
+                <a href={p.live} aria-label="Live" className="icon-link" target="_blank" rel="noopener noreferrer">
                   <FiExternalLink />
                 </a>
               </div>
